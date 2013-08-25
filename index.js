@@ -1,6 +1,6 @@
 "use strict";
 var Request = require("request");
-var Client = module.exports = unction(config) {
+var Client = module.exports = function(config) {
     this.config = config;
     this.debug = Util.isTrue(config.debug);
 
@@ -75,4 +75,4 @@ var Client = module.exports = unction(config) {
             callback("Something wrong happened in the request (index.js:this.request) function.");
         });
     };
-}).call();
+}).call(Client.prototype);
