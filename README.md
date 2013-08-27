@@ -1,7 +1,8 @@
-Youtube API
-===========
+# Youtube API
 
 A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
+
+[![NPM](https://nodei.co/npm/youtube-api.png)](https://nodei.co/npm/youtube-api/)
 
 ## Reference
  - [Activities](https://developers.google.com/youtube/v3/docs/activities)
