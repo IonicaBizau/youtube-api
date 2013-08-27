@@ -3,19 +3,18 @@ Youtube API
 
 A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
 
-
 ## Reference
- - Activities
- - ChannelBanners
- - Channels
- - GuideCategories
- - PlaylistItems
- - Playlists
- - Search
- - Subscriptions
- - Thumbnails
- - VideoCategories
- - Videos
+ - [Activities](https://developers.google.com/youtube/v3/docs/activities)
+ - [ChannelBanners](https://developers.google.com/youtube/v3/docs/channelbanners)
+ - [Channels](https://developers.google.com/youtube/v3/docs/channels)
+ - [GuideCategories](https://developers.google.com/youtube/v3/docs/guidecategories)
+ - [PlaylistItems](https://developers.google.com/youtube/v3/docs/playlistitems)
+ - [Playlists](https://developers.google.com/youtube/v3/docs/playlists)
+ - [Search](https://developers.google.com/youtube/v3/docs/search)
+ - [Subscriptions](https://developers.google.com/youtube/v3/docs/subscriptions)
+ - [Thumbnails](https://developers.google.com/youtube/v3/docs/thumbnails)
+ - [VideoCategories](https://developers.google.com/youtube/v3/docs/videocategories)
+ - [Videos](https://developers.google.com/youtube/v3/docs/videos)
 
 <table>
   <thead>
@@ -93,3 +92,9 @@ A Node.JS module, which provides an object oriented wrapper for the Youtube v3 A
     <td>no</td>
   </tr>
 </tbody></table>
+
+## Changelog
+
+### v0.1.0
+ - Initial release
+ - Supports only `GET` requests
