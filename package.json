@@ -2,7 +2,7 @@
   "name": "youtube-api",
   "version": "0.1.0",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.",
-  "main": "index.js",
+  "main": ".",
   "scripts": {
     "test": "test"
   },
