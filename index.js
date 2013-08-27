@@ -1,15 +1,12 @@
 "use strict";
 var Request = require("request");
-var Client = module.exports = function(config) {
-    this.config = config;
-    this.debug = Util.isTrue(config.debug);
+var Api     = require("./api/v3.0.0/index");
 
-    this.version = config.version;
-    var cls = require("./api/v" + this.version);
-    this[this.version] = new cls(this);
+var Client = module.exports = function(config) {
 };
 
 (function() {
+    var config = {};
     /**
      *  Client#authenticate(options) -> null
      *      - options (Object): Object containing the access token
@@ -25,7 +22,7 @@ var Client = module.exports = function(config) {
      **/
     this.authenticate = function (options) {
         if (!options) {
-            this.auth = false;
+            config.auth = undefined;
             return;
         }
 
@@ -36,7 +33,25 @@ var Client = module.exports = function(config) {
         if (options.type == "oauth" && !options.token)
             throw new Error("OAuth2 authentication requires a token to be set");
 
-        this.auth = options;
+        config.auth = options;
+    };
+
+    /**
+     *  Client#getConfig() -> config
+     *
+     *  Returns Client configuration object
+     **/
+    this.getConfig = function () {
+        return config;
+    };
+
+    /**
+     *  Client#setConfig(config) -> config
+     *
+     *  Sets the Client configuration object.
+     **/
+    this.setConfig = function (conf) {
+        return config = conf;
     };
 
     /**
@@ -62,17 +77,24 @@ var Client = module.exports = function(config) {
 
         reqOptions.json = true;
 
-        request(reqOptions, function (err, res, body) {
+        console.log(reqOptions);
+        Request(reqOptions, function (err, res, body) {
 
             if (!err && res.statusCode == 200) {
                 return callback(null, body);
+            }
+
+            if (body && body.error) {
+                err = body.error.message || body.error;
             }
 
             if (err) {
                 return callback(err);
             }
 
+            console.log(err, res.status);
             callback("Something wrong happened in the request (index.js:this.request) function.");
         });
     };
-}).call(Client.prototype);
+}).call(Client);
+Api.call(Client);
