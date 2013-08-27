@@ -5,15 +5,15 @@ A Node.JS module, which provides an object oriented wrapper for the Youtube v3 A
 
 ## Reference
  - [Activities](https://developers.google.com/youtube/v3/docs/activities)
- - [ChannelBanners](https://developers.google.com/youtube/v3/docs/channelbanners)
+ - [ChannelBanners](https://developers.google.com/youtube/v3/docs/channelBanners)
  - [Channels](https://developers.google.com/youtube/v3/docs/channels)
- - [GuideCategories](https://developers.google.com/youtube/v3/docs/guidecategories)
- - [PlaylistItems](https://developers.google.com/youtube/v3/docs/playlistitems)
+ - [GuideCategories](https://developers.google.com/youtube/v3/docs/guideCategories)
+ - [PlaylistItems](https://developers.google.com/youtube/v3/docs/playlistItems)
  - [Playlists](https://developers.google.com/youtube/v3/docs/playlists)
  - [Search](https://developers.google.com/youtube/v3/docs/search)
  - [Subscriptions](https://developers.google.com/youtube/v3/docs/subscriptions)
  - [Thumbnails](https://developers.google.com/youtube/v3/docs/thumbnails)
- - [VideoCategories](https://developers.google.com/youtube/v3/docs/videocategories)
+ - [VideoCategories](https://developers.google.com/youtube/v3/docs/videoCategories)
  - [Videos](https://developers.google.com/youtube/v3/docs/videos)
 
 <table>
