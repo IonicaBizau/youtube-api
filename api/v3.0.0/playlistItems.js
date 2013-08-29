@@ -32,7 +32,7 @@ function deleteItem (options, callback) {
 }
 
 module.exports = {
-    list: list
+    list: list,
     insert: insert,
     update: update,
     delete: deleteItem
