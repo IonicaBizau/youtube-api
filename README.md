@@ -148,7 +148,7 @@ More features will be added in the next versions.
 
 ## Running the Tests
 
-TODO
+Download and test this module using [this test application](https://github.com/IonicaBizau/test-youtube-api).
 
 Note that a connection to the internet is required to run the tests.
 
