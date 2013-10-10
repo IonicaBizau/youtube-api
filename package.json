@@ -6,6 +6,16 @@
   "scripts": {
     "test": "test"
   },
+  "contributors": [
+    {
+      "name": "Ionică Bizău"
+      "email": "bizauionica@gmail.com"
+    },
+    {
+      "name": "Adam (brutalhonesty)"
+      "email": "aaschodd@asu.edu"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/IonicaBizau/youtube-api.git"
