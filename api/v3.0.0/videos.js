@@ -22,7 +22,7 @@ function getRating (options, callback) {
 function list (options, callback) {
     var self = this;
 
-    var url = Util.createUrl.apply(self, ["channels", options]);
+    var url = Util.createUrl.apply(self, ["videos", options]);
     var reqOptions = {
         url: url,
     };
