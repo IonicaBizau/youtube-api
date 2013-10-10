@@ -152,11 +152,17 @@ Download and test this module using [this test application](https://github.com/I
 
 Note that a connection to the internet is required to run the tests.
 
+## Contributors
+See package.json file.
+
 ## LICENSE
 
 MIT license. See the LICENSE file for details.
 
 ## Changelog
+
+### v0.1.1
+ - Fixed #2 (pull request): fix in `videos` API requests.
 
 ### v0.1.0
  - Initial release
