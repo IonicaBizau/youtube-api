@@ -2,7 +2,7 @@
 
 A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
 
-[![NPM](https://nodei.co/npm/youtube-api.png)](https://nodei.co/npm/youtube-api/)
+[![NPM](https://nodei.co/npm/youtube-api.png?downloads=true)](https://nodei.co/npm/youtube-api/)
 
 ## Installation
 
