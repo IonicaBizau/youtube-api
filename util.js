@@ -13,7 +13,15 @@ function createUrl (api, options) {
 
     var url = API_URL + api;
 
-    options.access_token = (this.Client.getConfig().auth || {}).token;
+    switch((this.Client.getConfig().auth || {}).type) {
+        case 'key':
+            options.key = (this.Client.getConfig().auth || {}).key;
+            break;
+        case 'oauth':
+            options.access_token = (this.Client.getConfig().auth || {}).token;
+            break;
+    }
+
 
     var i = -1;
     for (var opt in options) {
