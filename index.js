@@ -37,10 +37,8 @@ var Client = module.exports = function(config) {
         // TODO Does Youtube API support basic auth?
         options.type = options.type || "oauth";
 
-        console.log(options);
-
         if (!options.type || "basic|oauth|key".indexOf(options.type) === -1) {
-            throw new Error("Invalid authentication type must be 'oauth'");
+            throw new Error("Invalid authentication type must be 'oauth' or 'key'");
         } else if (options.type == "key" && !options.key) {
             throw new Error("Key authentication requires a key to be set");
         } else if (options.type == "oauth" && !options.token) {
