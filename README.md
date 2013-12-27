@@ -161,6 +161,18 @@ MIT license. See the LICENSE file for details.
 
 ## Changelog
 
+### v0.2.0
+ - Added the key authentication.
+
+    Example:
+
+    ```js
+    Youtube.authenticate({
+        type: 'key',
+        key: 'AIz...OtE'
+    });
+    ```
+
 ### v0.1.1
  - Fixed #2 (pull request): fix in `videos` API requests.
 
