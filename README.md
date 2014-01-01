@@ -4,6 +4,12 @@ A Node.JS module, which provides an object oriented wrapper for the Youtube v3 A
 
 [![NPM](https://nodei.co/npm/youtube-api.png?downloads=true)](https://nodei.co/npm/youtube-api/)
 
+## Donate
+
+Any donation is welcome and I will be thankful!
+
+>[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FHC8NQC3YK924)
+
 ## Installation
 
 Install with the Node.JS package manager [npm](http://npmjs.org/):
