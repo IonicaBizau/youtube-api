@@ -14,15 +14,19 @@ Any donation is welcome and I will be thankful!
 
 Install with the Node.JS package manager [npm](http://npmjs.org/):
 
-    $ npm install youtube-api
+```sh
+$ npm install youtube-api
+```
 
 or
 
 Install via git clone:
 
-    $ git clone git://github.com/IonicaBizau/youtube-api.git
-    $ cd youtube-api
-    $ npm install
+```sh
+$ git clone git://github.com/IonicaBizau/youtube-api.git
+$ cd youtube-api
+$ npm install
+```
 
 ## Documentation
 
