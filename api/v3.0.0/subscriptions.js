@@ -11,7 +11,7 @@ var Util = require("../../util");
 function list (options, callback) {
     var self = this;
 
-    var url = Util.createUrl.apply(self, ["channels", options]);
+    var url = Util.createUrl.apply(self, ["subscriptions", options]);
     var reqOptions = {
         url: url,
     };
