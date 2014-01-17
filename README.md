@@ -171,6 +171,9 @@ MIT license. See the LICENSE file for details.
 
 ## Changelog
 
+### v0.2.1
+ - A mistake was corrected: [`channels` --> `subscriptions`](https://github.com/IonicaBizau/youtube-api/commit/62810585b6826cc03fe76dfeffd03d3934f444a8)
+
 ### v0.2.0
  - Added the key authentication.
 
