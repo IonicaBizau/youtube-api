@@ -25,6 +25,7 @@ function createUrl (api, options) {
 
     var i = -1;
     for (var opt in options) {
+        if (options[opt] === undefined) { continue; }
         var value = options[opt];
         url += (++i === 0 ? "?" : "&") + opt + "=" + value;
     }
