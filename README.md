@@ -171,6 +171,11 @@ MIT license. See the LICENSE file for details.
 
 ## Changelog
 
+### v0.2.2
+ - Removed debugging message from index.js
+ - Output an error in application logs if there is an unkwnown error in request
+ - Minor fix in util.js
+
 ### v0.2.1
  - A mistake was corrected: [`channels` --> `subscriptions`](https://github.com/IonicaBizau/youtube-api/commit/62810585b6826cc03fe76dfeffd03d3934f444a8)
 
