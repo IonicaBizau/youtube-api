@@ -87,7 +87,9 @@ var Client = module.exports = function(config) {
             reqOptions[option] = options[option];
         }
 
-        reqOptions.json = true;
+        if (reqOptions.json == undefined) {
+            reqOptions.json = true;
+        }
 
         Request(reqOptions, function (err, res, body) {
 
@@ -103,8 +105,17 @@ var Client = module.exports = function(config) {
                 return callback(err);
             }
 
-            console.log(err, res.status);
-            callback("Something wrong happened in the request (index.js:this.request) function.");
+            // unknown error
+            callback("Something wrong happened in the request (index.js:this.request) function. Check the logs for more information.");
+            console.error(
+                 "\n---- Submit an issue with the following information ----" +
+                 "\nIssues: https://github.com/IonicaBizau/youtube-api/issues" +
+                 "\nDate: "         + new Date().toString() +
+                 "\nError: "        + JSON.stringify(err) +
+                 "\nStatus Code:: " + JSON.stringify(res.statusCode) +
+                 "\nBody: "         + JSON.stringify(body) +
+                 "\n------------------"
+            );
         });
     };
 }).call(Client);
