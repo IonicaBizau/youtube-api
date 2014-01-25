@@ -20,11 +20,45 @@ function list (options, callback) {
 }
 
 function insert (options, callback) {
-    callback(null, {"error": "Not yet implemented"});
+
+    // get self
+    var self = this
+
+        // create the request url
+      , url = Util.createUrl.apply(self, ["subscriptions", {
+            part:   options.part,
+            fields: options.fields
+        }])
+
+        // create the request options
+      , reqOptions = {
+           uri: url,
+           method: "POST",
+           json: options.requestBody
+       };
+
+    // submit request and callback
+    self.Client.request(reqOptions, callback);
 }
 
 function deleteItem (options, callback) {
-    callback(null, {"error": "Not yet implemented"});
+
+    // get self
+    var self = this
+
+        // create the request url
+      , url = Util.createUrl.apply(self, ["subscriptions", {
+            id:   options.id
+        }])
+
+        // create the request options
+      , reqOptions = {
+           uri: url,
+           method: "DELETE"
+       };
+
+    // submit request and callback
+    self.Client.request(reqOptions, callback);
 }
 
 module.exports = {
