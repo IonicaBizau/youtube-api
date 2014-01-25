@@ -97,6 +97,11 @@ var Client = module.exports = function(config) {
                 return callback(null, body);
             }
 
+            // no content
+            if (res.statusCode === 204) {
+                return callback(null, "");
+            }
+
             if (body && body.error) {
                 err = body.error.message || body.error;
             }
