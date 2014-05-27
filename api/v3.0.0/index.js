@@ -51,13 +51,14 @@ function methodGenerator (api, requestOptions) {
 
 module.exports = function () {
     var self = this;
+    debugger;
     for (var api in ApiMap) {
         var cApi = ApiMap[api];
         this[api] = this[api] || {};
+        this[api].Client = self;
         for (var me in cApi.methods) {
             var cMethod = cApi.methods[me];
-            this[apis[i]] = api;
-            this[apis[i]].Client = self;
+            this[api][me] = methodGenerator(api, cMethod.options);
         }
     }
 };
