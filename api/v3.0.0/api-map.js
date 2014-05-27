@@ -26,7 +26,7 @@ const METHODS = {
 };
 
 // The YouTube API map
-var ApiMap = {
+var ApiMap = module.exports = {
     "activities": {
         "methods": {
             "list": METHODS.get
