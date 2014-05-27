@@ -6,6 +6,7 @@
  *
  **/
 
+// Dependencies
 var ApiMap = require("./api-map");
 
 /**
@@ -50,12 +51,19 @@ function methodGenerator (api, requestOptions) {
 }
 
 module.exports = function () {
+
+    // Initialize self
     var self = this;
-    debugger;
+
+    // Each api
     for (var api in ApiMap) {
         var cApi = ApiMap[api];
+
+        // Initialize the api object
         this[api] = this[api] || {};
         this[api].Client = self;
+
+        // Generate methods
         for (var me in cApi.methods) {
             var cMethod = cApi.methods[me];
             this[api][me] = methodGenerator(api, cMethod.options);

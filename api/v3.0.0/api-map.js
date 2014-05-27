@@ -13,7 +13,7 @@ const METHODS = {
             method: "POST"
         }
     }
-  , update: {
+  , put: {
         options: {
             method: "PUT"
         }
