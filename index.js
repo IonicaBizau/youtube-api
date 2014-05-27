@@ -8,10 +8,9 @@
 
 "use strict";
 var Request = require("request");
-var Api     = require("./api/v3.0.0/index");
+var Api     = require("./api");
 
-var Client = module.exports = function(config) {
-};
+var Client = module.exports = function(config) {};
 
 (function() {
     var config = {};
