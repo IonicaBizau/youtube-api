@@ -27,7 +27,8 @@
     "url": "https://github.com/IonicaBizau/youtube-api/issues"
   },
   "dependencies": {
-    "request": "*"
+    "request": "2.36.0",
+    "bug-killer": "0.1.0"
   },
   "homepage": "https://github.com/IonicaBizau/youtube-api",
   "devDependencies": {}
