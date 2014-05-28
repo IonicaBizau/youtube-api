@@ -7,22 +7,10 @@
     "test": "test"
   },
   "contributors": [
-    {
-      "name": "Ionică Bizău",
-      "email": "bizauionica@gmail.com"
-    },
-    {
-      "name": "Adam (brutalhonesty)",
-      "email": "aaschodd@asu.edu"
-    },
-    {
-      "name": "Michael Scharl",
-      "email": "developeme@gmail.com"
-    },
-    {
-      "name": "Vels (velsa)",
-      "email": "velshome@yahoo.com"
-    }
+    "Ionică Bizău <bizauionica@gmail.com>",
+    "Adam <aaschodd@asu.edu> (brutalhonesty)",
+    "Michael Scharl <developeme@gmail.com>",
+    "Vels <velshome@yahoo.com> (velsa)"
   ],
   "repository": {
     "type": "git",
@@ -40,5 +28,7 @@
   },
   "dependencies": {
     "request": "*"
-  }
+  },
+  "homepage": "https://github.com/IonicaBizau/youtube-api",
+  "devDependencies": {}
 }
