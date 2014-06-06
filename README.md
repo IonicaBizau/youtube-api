@@ -4,6 +4,9 @@ A Node.JS module, which provides an object oriented wrapper for the Youtube v3 A
 
 [![NPM](https://nodei.co/npm/youtube-api.png?downloads=true)](https://nodei.co/npm/youtube-api/)
 
+## Development Branch
+If you want to view the latest changes checkout [**`dynamic`**](https://github.com/IonicaBizau/youtube-api/tree/dynamic) branch.
+
 ## Donate
 
 Help the `youtube-api` NPM package development. Any donation is welcome and I will be thankful!
