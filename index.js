@@ -7,11 +7,9 @@
  **/
 
 "use strict";
-var Request = require("request");
-var Api     = require("./api/v3.0.0/index");
+var Google = require('googleapis');
 
-var Client = module.exports = function(config) {
-};
+var Client = module.exports = function(config) {};
 
 (function() {
     var config = {};
@@ -34,17 +32,15 @@ var Client = module.exports = function(config) {
             return;
         }
 
-        // TODO Does Youtube API support basic auth?
-        options.type = options.type || "oauth";
+        var authObj = null;
+        switch (options.type) {
+            case "oauth":
+                authObj = options.token;
 
-        if (!options.type || "basic|oauth|key".indexOf(options.type) === -1) {
-            throw new Error("Invalid authentication type must be 'oauth' or 'key'");
-        } else if (options.type == "key" && !options.key) {
-            throw new Error("Key authentication requires a key to be set");
-        } else if (options.type == "oauth" && !options.token) {
-            throw new Error("OAuth2 authentication requires a token to be set");
+                break;
         }
 
+        Google.options({ auth: authObj });
         config.auth = options;
     };
 
@@ -66,62 +62,9 @@ var Client = module.exports = function(config) {
         return config = conf;
     };
 
-    /**
-     *  Client#request(options, callback) -> null
-     *      - options (Object): parameters to send as the request body
-     *      - callback (Function): function to be called when the request returns.
-     *          If the the request returns with an error, the error is passed to
-     *          the callback as its first argument (NodeJS-style).
-     *
-     *  Send an HTTP request to the server and pass the result to a callback.
-     **/
-    this.request = function(options, callback) {
+    var GoogleYoutube = Google.youtube("v3");
+    for (var f in GoogleYoutube) {
+        this[f] = GoogleYoutube[f];
+    }
 
-        var reqOptions = {};
-
-        if (typeof options === "string") {
-            reqOptions.url = options;
-        }
-
-        for (var option in options) {
-            reqOptions[option] = options[option];
-        }
-
-        if (reqOptions.json == undefined) {
-            reqOptions.json = true;
-        }
-
-        Request(reqOptions, function (err, res, body) {
-
-            if (!err && res.statusCode == 200) {
-                return callback(null, body);
-            }
-
-            // no content
-            if (res.statusCode === 204) {
-                return callback(null, "");
-            }
-
-            if (body && body.error) {
-                err = body.error.message || body.error;
-            }
-
-            if (err) {
-                return callback(err);
-            }
-
-            // unknown error
-            callback("Something wrong happened in the request (index.js:this.request) function. Check the logs for more information.");
-            console.error(
-                 "\n---- Submit an issue with the following information ----" +
-                 "\nIssues: https://github.com/IonicaBizau/youtube-api/issues" +
-                 "\nDate: "         + new Date().toString() +
-                 "\nError: "        + JSON.stringify(err) +
-                 "\nStatus Code:: " + JSON.stringify(res.statusCode) +
-                 "\nBody: "         + JSON.stringify(body) +
-                 "\n------------------"
-            );
-        });
-    };
 }).call(Client);
-Api.call(Client);
