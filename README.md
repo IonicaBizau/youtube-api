@@ -46,16 +46,16 @@ If you have any questions, just [open an issue](https://github.com/IonicaBizau/y
 var Youtube = require("youtube-api");
 
 Youtube.authenticate({
-    type: "oauth",
-    token: ACCESS_TOKEN
+    type: "oauth"
+  , token: ACCESS_TOKEN
 });
 
 Youtube.channels.list({
-    "part": "id",
-    "mySubscribers": true,
-    "maxResults": 50
+    "part": "id"
+  , "mySubscribers": true
+  , "maxResults": 50
 }, function (err, data) {
-    console.log(err, data);
+    console.log(err || data);
 });
 ```
 
