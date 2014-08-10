@@ -41,6 +41,9 @@ var Client = module.exports = function(config) {};
                   , refresh_token: options.refresh_token
                 });
                 break;
+            case "key":
+                authObj = options.key;
+                break;
         }
 
         Google.options({ auth: authObj });
