@@ -64,16 +64,16 @@ Youtube.channels.list({
 ### OAuth
 ```JS
 Youtube.authenticate({
-    type: "oauth",
-    token: "your access token"
+    type: "oauth"
+  , token: "your access token"
 });
 ```
 
 ### Server Key
 ```JS
 Youtube.authenticate({
-    type: "key",
-    token: "your server key"
+    type: "key"
+  , token: "your server key"
 });
 ```
 
@@ -88,7 +88,7 @@ Youtube.authenticate({
   , scopes: ["https://www.googleapis.com/auth/youtube"]
 }).authorize(function (err, data) {
     if (err) { throw err; }
-    /* Access APIs */
+    /* Access resources */
 });
 ```
 
@@ -131,8 +131,8 @@ MIT license. See the LICENSE file for details.
 
     ```js
     Youtube.authenticate({
-        type: 'key',
-        key: 'AIz...OtE'
+        type: 'key'
+      , key: 'AIz...OtE'
     });
     ```
 
