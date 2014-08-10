@@ -1,5 +1,5 @@
 // Dependencies
-var Google = require('googleapis');
+var Google = require("googleapis");
 
 // Create YoutTube client
 var Client = module.exports = function(config) {};
