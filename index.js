@@ -45,7 +45,7 @@ var Client = module.exports = function(config) {};
                 authObj = options.key;
                 break;
             case "jwt":
-                authObj = new googleapis.auth.JWT(
+                authObj = new Google.auth.JWT(
                     options.email
                   , authData.keyFile,
                   , authData.key,
