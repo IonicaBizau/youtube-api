@@ -35,8 +35,11 @@ var Client = module.exports = function(config) {};
         var authObj = null;
         switch (options.type) {
             case "oauth":
-                authObj = options.token;
-
+                // TODO
+                authObj = new  Google.auth.OAuth2();
+                authObj.setCredentials({
+                    access_token: options.token
+                });
                 break;
         }
 
