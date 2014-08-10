@@ -79,6 +79,7 @@ var Client = module.exports = function(config) {};
         return config = conf;
     };
 
+    // Add Google YouTube API functions
     var GoogleYoutube = Google.youtube("v3");
     for (var f in GoogleYoutube) {
         this[f] = GoogleYoutube[f];
