@@ -83,7 +83,7 @@ Youtube.authenticate({
     type: "jwt"
   , email: "77....3vv@developer.gserviceaccount.com"
   , keyFile: "... auth.pem"
-  , key: fb....d50"
+  , key: "fb....d50"
   , subject: "you@gmail.com" // optional
   , scopes: ["https://www.googleapis.com/auth/youtube"]
 }).authorize(function (err, data) {
