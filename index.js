@@ -1,14 +1,7 @@
-/**
- *  Copyright 2013-14 Ionică Bizău
- *
- *  A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
- *  Author: Ionică Bizău <bizauionica@gmail.com>
- *
- **/
-
-"use strict";
+// Dependencies
 var Google = require('googleapis');
 
+// Create YoutTube client
 var Client = module.exports = function(config) {};
 
 (function() {
@@ -47,10 +40,10 @@ var Client = module.exports = function(config) {};
             case "jwt":
                 authObj = new Google.auth.JWT(
                     options.email
-                  , authData.keyFile,
-                  , authData.key,
-                  , authData.scopes,
-                  , authData.subject
+                  , options.keyFile
+                  , options.key
+                  , options.scopes
+                  , options.subject
                 );
                 break;
         }
