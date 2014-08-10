@@ -7,18 +7,14 @@ var Client = module.exports = function(config) {};
 (function() {
     var config = {};
     /**
-     *  Client#authenticate(options) -> null
-     *      - options (Object): Object containing the access token
-     *          - token (String): OAuth2 token
+     * authenticate
+     * Sets an authentication method to have access to protected resources.
      *
-     *  Set an authentication method to have access to protected resources.
-     *
-     *  Example
-     *
-     *      Youtube.authenticate({
-     *          token: "..."
-     *      });
-     **/
+     * @name authenticate
+     * @function
+     * @param {Object} options An object containing the authentication information.
+     * @return {Object} The authentication object
+     */
     this.authenticate = function (options) {
         if (!options) {
             config.auth = undefined;
@@ -55,21 +51,15 @@ var Client = module.exports = function(config) {};
     };
 
     /**
-     *  Client#getConfig() -> config
+     * getConfig
+     * Returns Client configuration object
      *
-     *  Returns Client configuration object
-     **/
+     * @name getConfig
+     * @function
+     * @return {Object} Client configuration object
+     */
     this.getConfig = function () {
         return config;
-    };
-
-    /**
-     *  Client#setConfig(config) -> config
-     *
-     *  Sets the Client configuration object.
-     **/
-    this.setConfig = function (conf) {
-        return config = conf;
     };
 
     // Add Google YouTube API functions
@@ -77,5 +67,4 @@ var Client = module.exports = function(config) {};
     for (var f in GoogleYoutube) {
         this[f] = GoogleYoutube[f];
     }
-
 }).call(Client);
