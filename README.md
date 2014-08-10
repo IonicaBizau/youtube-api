@@ -4,15 +4,6 @@ A Node.JS module, which provides an object oriented wrapper for the Youtube v3 A
 
 [![NPM](https://nodei.co/npm/youtube-api.png?downloads=true)](https://nodei.co/npm/youtube-api/)
 
-## Development Branch
-If you want to view the latest changes checkout [**`dynamic`**](https://github.com/IonicaBizau/youtube-api/tree/dynamic) branch.
-
-## Donate
-
-Help the `youtube-api` NPM package development. Any donation is welcome and I will be thankful!
-
->[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FHC8NQC3YK924)
-
 ## Installation
 
 Install with the Node.JS package manager [npm](http://npmjs.org/):
@@ -23,7 +14,7 @@ $ npm install youtube-api
 
 or
 
-Install via git clone:
+Install via `git`:
 
 ```sh
 $ git clone git://github.com/IonicaBizau/youtube-api.git
@@ -33,9 +24,7 @@ $ npm install
 
 ## Documentation
 
-You can find the docs for the API of this client at [http://ionicabizau.github.io/youtube-api/](http://ionizabicau.github.io/youtube-api/)
-
-Additionally, the [official Youtube documentation](https://developers.google.com/youtube/v3/docs/) is a very useful resource.
+The [official Youtube documentation](https://developers.google.com/youtube/v3/docs/) is a very useful resource.
 
  - [Activities](https://developers.google.com/youtube/v3/docs/activities)
  - [ChannelBanners](https://developers.google.com/youtube/v3/docs/channelBanners)
@@ -49,82 +38,7 @@ Additionally, the [official Youtube documentation](https://developers.google.com
  - [VideoCategories](https://developers.google.com/youtube/v3/docs/videoCategories)
  - [Videos](https://developers.google.com/youtube/v3/docs/videos)
 
-<table>
-  <thead>
-    <tr><th><div>Resource Type</div></th>
-    <th><div>Supported Operations</div></th>
-  </tr></thead>
-  <tbody><tr>
-    <td></td>
-    <td><strong><span>list</span></strong></td>
-    <td><strong><span>insert</span></strong></td>
-    <td><strong><span>update</span></strong></td>
-    <td><strong><span>delete</span></strong></td>
-  </tr>
-  <tr>
-    <td><b>activity</b></td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>no</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td><b>channel</b></td>
-    <td>yes</td>
-    <td>no</td>
-    <td>no</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td><b>guideCategory</b></td>
-    <td>yes</td>
-    <td>no</td>
-    <td>no</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td><b>playlist</b></td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td><b>playlistItem</b></td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td><b>search result</b></td>
-    <td>yes</td>
-    <td>no</td>
-    <td>no</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td><b>subscription</b></td>
-    <td>yes</td>
-    <td>no</td>
-    <td>no</td>
-    <td>no</td>
-  </tr>
-  <tr>
-    <td><b>video</b></td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>yes</td>
-    <td>yes</td>
-  </tr>
-  <tr>
-    <td><b>videoCategory</b></td>
-    <td>yes</td>
-    <td>no</td>
-    <td>no</td>
-    <td>no</td>
-  </tr>
-</tbody></table>
+If you have any questions, just [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new).
 
 ## Example
 
@@ -132,35 +46,53 @@ Additionally, the [official Youtube documentation](https://developers.google.com
 var Youtube = require("youtube-api");
 
 Youtube.authenticate({
-    type: "oauth",
-    token: ACCESS_TOKEN
+    type: "oauth"
+  , token: ACCESS_TOKEN
 });
 
 Youtube.channels.list({
-    "part": "id",
-    "mySubscribers": true,
-    "maxResults": 50
+    "part": "id"
+  , "mySubscribers": true
+  , "maxResults": 50
 }, function (err, data) {
-    console.log(err, data);
+    console.log(err || data);
 });
 ```
 
 ## Authentication
 
+### OAuth
 ```JS
 Youtube.authenticate({
-    type: "oauth",
-    token: "your access token"
+    type: "oauth"
+  , token: "your access token"
 });
 ```
 
-## Implemented Youtube APIs
+### Server Key
+```JS
+Youtube.authenticate({
+    type: "key"
+  , token: "your server key"
+});
+```
 
-All APIs that don't require `POST`, `PUT` or `DELETE` request methods are supported.
-More features will be added in the next versions.
+### JWT
+```JS
+Youtube.authenticate({
+    type: "jwt"
+  , email: "77....3vv@developer.gserviceaccount.com"
+  , keyFile: "... auth.pem"
+  , key: "fb....d50"
+  , subject: "you@gmail.com" // optional
+  , scopes: ["https://www.googleapis.com/auth/youtube"]
+}).authorize(function (err, data) {
+    if (err) { throw err; }
+    /* Access resources */
+});
+```
 
 ## Running the Tests
-
 Download and test this module using [this test application](https://github.com/IonicaBizau/test-youtube-api).
 
 Note that a connection to the internet is required to run the tests.
@@ -168,11 +100,21 @@ Note that a connection to the internet is required to run the tests.
 ## Contributors
 See package.json file.
 
-## LICENSE
+## Donate
+Help the `youtube-api` NPM package development. Any donation is welcome and I will be thankful!
 
+>[![](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FHC8NQC3YK924)
+
+
+## LICENSE
 MIT license. See the LICENSE file for details.
 
 ## Changelog
+
+### v0.3.0
+ - JWT authentication type
+ - All request types are supported (using `googleapis`)
+ - Deprecacted `setConfig` method
 
 ### v0.2.2
  - Removed debugging message from index.js
@@ -189,8 +131,8 @@ MIT license. See the LICENSE file for details.
 
     ```js
     Youtube.authenticate({
-        type: 'key',
-        key: 'AIz...OtE'
+        type: 'key'
+      , key: 'AIz...OtE'
     });
     ```
 
