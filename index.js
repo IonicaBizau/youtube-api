@@ -44,10 +44,21 @@ var Client = module.exports = function(config) {};
             case "key":
                 authObj = options.key;
                 break;
+            case "jwt":
+                authObj = new googleapis.auth.JWT(
+                    options.email
+                  , authData.keyFile,
+                  , authData.key,
+                  , authData.scopes,
+                  , authData.subject
+                );
+                break;
         }
 
         Google.options({ auth: authObj });
         config.auth = options;
+
+        return authObj;
     };
 
     /**
