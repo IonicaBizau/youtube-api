@@ -73,7 +73,7 @@ Youtube.authenticate({
 ```JS
 Youtube.authenticate({
     type: "key"
-  , token: "your server key"
+  , key: "your server key"
 });
 ```
 
