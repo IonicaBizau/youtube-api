@@ -1,6 +1,6 @@
 {
   "name": "youtube-api",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.",
   "main": "./index.js",
   "author": "IonicaBizau <bizauionica@gmail.com>",

@@ -111,6 +111,9 @@ MIT license. See the LICENSE file for details.
 
 ## Changelog
 
+### v0.3.1
+ - Fixes in documentation
+
 ### v0.3.0
  - JWT authentication type
  - All request types are supported (using `googleapis`)
