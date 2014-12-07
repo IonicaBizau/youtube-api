@@ -124,6 +124,9 @@ MIT license. See the LICENSE file for details.
 
 ## Changelog
 
+### v0.3.2
+ - Insert request example in README.
+
 ### v0.3.1
  - Fixes in documentation
 
