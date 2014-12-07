@@ -50,10 +50,24 @@ Youtube.authenticate({
   , token: ACCESS_TOKEN
 });
 
+
 Youtube.channels.list({
     "part": "id"
   , "mySubscribers": true
   , "maxResults": 50
+}, function (err, data) {
+    console.log(err || data);
+});
+
+Youtube.playlistItems.insert({
+    "part": "snippet"
+  , "resource" : {
+  		"playlistId": "youtube playlist id"
+  		, "resourceId": {
+  	  		"videoId": "youtube video id"
+  	  		, "kind": "youtube#video"
+  		}
+  	}
 }, function (err, data) {
     console.log(err || data);
 });
