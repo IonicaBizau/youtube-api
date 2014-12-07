@@ -50,12 +50,25 @@ Youtube.authenticate({
   , token: ACCESS_TOKEN
 });
 
+// List your channels
 Youtube.channels.list({
     "part": "id"
   , "mySubscribers": true
   , "maxResults": 50
 }, function (err, data) {
     console.log(err || data);
+});
+
+// Add a Video to a playlist
+Youtube.playlistItems.insert({
+    "part": "snippet"
+  , "resource": {
+      "playlistId": "YouTube Playlist ID"
+    , "resourceId": {
+       "videoId": "YouTube Video ID"
+     , "kind": "youtube#video"
+      }
+    }
 });
 ```
 
