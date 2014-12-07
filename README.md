@@ -50,7 +50,7 @@ Youtube.authenticate({
   , token: ACCESS_TOKEN
 });
 
-
+// List your channels
 Youtube.channels.list({
     "part": "id"
   , "mySubscribers": true
@@ -59,6 +59,7 @@ Youtube.channels.list({
     console.log(err || data);
 });
 
+// Add a Video to a playlist
 Youtube.playlistItems.insert({
     "part": "snippet"
   , "resource" : {
