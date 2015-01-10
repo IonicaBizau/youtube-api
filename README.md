@@ -61,14 +61,16 @@ Youtube.channels.list({
 
 // Add a Video to a playlist
 Youtube.playlistItems.insert({
-    "part": "snippet"
-  , "resource": {
-      "playlistId": "YouTube Playlist ID"
-    , "resourceId": {
-       "videoId": "YouTube Video ID"
-     , "kind": "youtube#video"
+    "part"  : "snippet"
+  , "resource" : {
+      "snippet" : {
+        "playlistId" : "YouTube Playlist ID"
+      , "resourceId" : {
+          "kind" : "youtube#video"
+        , "videoId" : "YouTube Video ID"
+          }
+        }
       }
-    }
 });
 ```
 
