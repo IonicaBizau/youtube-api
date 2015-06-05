@@ -76,11 +76,22 @@ Youtube.playlistItems.insert({
 
 ## Authentication
 
-### OAuth
+### OAuth (Access Token)
 ```JS
 Youtube.authenticate({
     type: "oauth"
   , token: "your access token"
+});
+```
+
+### OAuth (Refresh Token)
+```JS
+Youtube.authenticate({
+    type: "oauth"
+  , refresh_token: "your refresh token"
+  , client_id: "your client id"
+  , client_secret: "your client secret"
+  , redirect_url: "your refresh url"
 });
 ```
 
