@@ -1,5 +1,5 @@
-*~
 *.swp
+*.swo
+*~
 *.log
-log.txt
-/node_modules
+node_modules
