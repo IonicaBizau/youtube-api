@@ -1,26 +1,14 @@
 {
   "name": "youtube-api",
-  "version": "0.3.2",
+  "version": "1.0.0",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.",
-  "main": "./index.js",
+  "main": "lib/index.js",
   "author": "IonicaBizau <bizauionica@gmail.com>",
   "contributors": [
-    {
-      "name": "Ionică Bizău",
-      "email": "bizauionica@gmail.com"
-    },
-    {
-      "name": "Adam (brutalhonesty)",
-      "email": "aaschodd@asu.edu"
-    },
-    {
-      "name": "Michael Scharl",
-      "email": "developeme@gmail.com"
-    },
-    {
-      "name": "Vels (velsa)",
-      "email": "velshome@yahoo.com"
-    }
+    "Ionică Bizău <bizauionica@gmail.com>",
+    "Adam <aaschodd@asu.edu> (brutalhonesty)",
+    "Michael Scharl <developeme@gmail.com>",
+    "Vels <velshome@yahoo.com> (velsa)"
   ],
   "repository": {
     "type": "git",
@@ -37,6 +25,14 @@
     "url": "https://github.com/IonicaBizau/youtube-api/issues"
   },
   "dependencies": {
-    "googleapis": "1.0.6"
+    "googleapis": "2.0.5"
+  },
+  "homepage": "https://github.com/IonicaBizau/youtube-api",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
