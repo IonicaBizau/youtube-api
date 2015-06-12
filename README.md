@@ -87,11 +87,22 @@ If you have any questions, just [open an issue](https://github.com/IonicaBizau/y
 
 ### Authentication
 
-#### OAuth
+#### OAuth (Access Token)
 ```js
 Youtube.authenticate({
     type: "oauth"
   , token: "your access token"
+});
+```
+
+#### OAuth (Refresh Token)
+```js
+Youtube.authenticate({
+    type: "oauth"
+  , refresh_token: "your refresh token"
+  , client_id: "your client id"
+  , client_secret: "your client secret"
+  , redirect_url: "your refresh url"
 });
 ```
 
@@ -107,7 +118,7 @@ Youtube.authenticate({
 Just perfect for server side only authentication. It does not require
 client side interaction.
 
-```JS
+```js
 Youtube.authenticate({
     type: "jwt"
   , email: "77....3vv@developer.gserviceaccount.com"
