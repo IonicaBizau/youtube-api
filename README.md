@@ -157,28 +157,11 @@ Youtube.authenticate({
 ```
 
 #### Server Key
+*Only for requests that don't require [user authorization](https://developers.google.com/youtube/v3/guides/authentication) (certain list operations)*
 ```js
 Youtube.authenticate({
     type: "key"
   , key: "your server key"
-});
-```
-
-#### JWT
-Just perfect for server side only authentication. It does not require
-client side interaction.
-
-```js
-Youtube.authenticate({
-    type: "jwt"
-  , email: "77....3vv@developer.gserviceaccount.com"
-  , keyFile: "... auth.pem"
-  , key: "fb....d50"
-  , subject: "you@gmail.com" // optional
-  , scopes: ["https://www.googleapis.com/auth/youtube"]
-}).authorize(function (err, data) {
-    if (err) { throw err; }
-    /* Access resources */
 });
 ```
 
