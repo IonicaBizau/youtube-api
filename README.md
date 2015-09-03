@@ -157,6 +157,7 @@ Youtube.authenticate({
 ```
 
 #### Server Key
+_only for request that don't require [user authorization](https://developers.google.com/youtube/v3/guides/authentication) (certain list operations)_
 ```js
 Youtube.authenticate({
     type: "key"
