@@ -11,14 +11,13 @@
  * Don't forget to run an `npm i` to install the `youtube-api` dependencies.
  * */
 
-// Depende3ncies
+// Dependencies
 var Youtube = require("../lib")
   , Fs = require("fs")
   , ReadJson = require("r-json")
   , Lien = require("lien")
   , Logger = require("bug-killer")
   , Opn = require("opn")
-  , ReadLine = require('readline')
   ;
 
 // Constants
@@ -29,12 +28,6 @@ const CREDENTIALS = ReadJson("./credentials.json");
 var server = new Lien({
     host: "localhost"
   , port: 5000
-});
-
-
-var stdIn = ReadLine.createInterface({
-    input: process.stdin
-  , output: process.stdout
 });
 
 // Authenticate
