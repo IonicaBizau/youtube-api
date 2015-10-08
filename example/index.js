@@ -18,6 +18,7 @@ var Youtube = require("../lib")
   , Lien = require("lien")
   , Logger = require("bug-killer")
   , Opn = require("opn")
+  , ReadLine = require('readline')
   ;
 
 // Constants
