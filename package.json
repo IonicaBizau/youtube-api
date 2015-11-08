@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.",
   "main": "lib/index.js",
-  "author": "IonicaBizau <bizauionica@gmail.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "contributors": [
     "Ionică Bizău <bizauionica@gmail.com>",
     "Adam <aaschodd@asu.edu> (brutalhonesty)",
@@ -22,7 +22,7 @@
     "v3",
     "node"
   ],
-  "license": "KINDLY",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/youtube-api/issues"
   },
@@ -36,5 +36,76 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "blah": {
+    "show_jsdocs": false,
+    "documentation": [
+      "The [official Youtube documentation](https://developers.google.com/youtube/v3/docs/) is a very useful resource.",
+      {
+        "ul": [
+          "[Activities](https://developers.google.com/youtube/v3/docs/activities)",
+          "[ChannelBanners](https://developers.google.com/youtube/v3/docs/channelBanners)",
+          "[Channels](https://developers.google.com/youtube/v3/docs/channels)",
+          "[GuideCategories](https://developers.google.com/youtube/v3/docs/guideCategories)",
+          "[PlaylistItems](https://developers.google.com/youtube/v3/docs/playlistItems)",
+          "[Playlists](https://developers.google.com/youtube/v3/docs/playlists)",
+          "[Search](https://developers.google.com/youtube/v3/docs/search)",
+          "[Subscriptions](https://developers.google.com/youtube/v3/docs/subscriptions)",
+          "[Thumbnails](https://developers.google.com/youtube/v3/docs/thumbnails)",
+          "[VideoCategories](https://developers.google.com/youtube/v3/docs/videoCategories)",
+          "[Videos](https://developers.google.com/youtube/v3/docs/videos)"
+        ]
+      },
+      "If you have any questions, just [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new).",
+      {
+        "h3": "Authentication"
+      },
+      {
+        "h4": "OAuth (Access Token)"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "Youtube.authenticate({",
+            "    type: \"oauth\"",
+            "  , token: \"your access token\"",
+            "});"
+          ]
+        }
+      },
+      {
+        "h4": "OAuth (Refresh Token)"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "Youtube.authenticate({",
+            "    type: \"oauth\"",
+            "  , refresh_token: \"your refresh token\"",
+            "  , client_id: \"your client id\"",
+            "  , client_secret: \"your client secret\"",
+            "  , redirect_url: \"your refresh url\"",
+            "});"
+          ]
+        }
+      },
+      {
+        "h4": "Server Key"
+      },
+      "Only for requests that don't require [user authorization](https://developers.google.com/youtube/v3/guides/authentication) (certain list operations)",
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "Youtube.authenticate({",
+            "    type: \"key\"",
+            "  , key: \"your server key\"",
+            "});"
+          ]
+        }
+      }
+    ]
   }
 }
