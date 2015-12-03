@@ -5,7 +5,7 @@ A Node.JS module, which provides an object oriented wrapper for the Youtube v3 A
 ## Installation
 
 ```sh
-$ npm i youtube-api
+$ npm i --save youtube-api
 ```
 
 ## Example
@@ -147,6 +147,8 @@ If you are using this library in one of your projects, add it in this list. :spa
 
  - [`mediacenterjs`](http://www.mediacenterjs.com) by Jan Smolders
 
+ - [`mediacenterjs-youtube`](http://www.mediacenterjs.com) by Jan Smolders
+
  - [`node-red-node-youtube`](https://github.com/jlong23/node-red-node-youtube#readme) by Jay Long
 
  - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) by Haidy777
@@ -157,19 +159,20 @@ If you are using this library in one of your projects, add it in this list. :spa
 
  - [`steam-chat-bot`](https://steam-chat-bot.github.io/node-steam-chat-bot) by See contributors
 
- - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api) by Ionică Bizău
+ - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api)
+
+ - [`youtube-playlist-info`](https://github.com/benkaiser/youtube-playlist-info) by Benjamin Kaiser
 
  - [`youtube-vanitystats`](https://npmjs.com/package/youtube-vanitystats) by Sebastian Patten
 
 ## License
 
-[KINDLY][license] © [Ionică Bizău][website]
+[MIT][license] © [Ionică Bizău][website]
 
-[license]: http://ionicabizau.github.io/kindly-license/?author=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica@gmail.com%3E&year=2013
-
-[website]: http://ionicabizau.net
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
 [donate-now]: http://i.imgur.com/6cMbHOC.png
 
+[license]: http://showalicense.com/?fullname=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica%40gmail.com%3E%20(http%3A%2F%2Fionicabizau.net)&year=2013#license-mit
+[website]: http://ionicabizau.net
 [contributing]: /CONTRIBUTING.md
 [docs]: /DOCUMENTATION.md
