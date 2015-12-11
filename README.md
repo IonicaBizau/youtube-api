@@ -164,6 +164,8 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`youtube-playlist-info`](https://github.com/benkaiser/youtube-playlist-info) by Benjamin Kaiser
 
  - [`youtube-vanitystats`](https://npmjs.com/package/youtube-vanitystats) by Sebastian Patten
+ 
+ - [`youtube-album-uploader`](https://github.com/jpchip/youtube-album-uploader) by Jared Chapiewsky 
 
 ## License
 
