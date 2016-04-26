@@ -1,14 +1,18 @@
-# youtube-api [![Support this project][donate-now]][paypal-donations]
 
-A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
+# youtube-api [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Downloads](https://img.shields.io/npm/dt/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
-## Installation
+> A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
+
+## :cloud: Installation
 
 ```sh
 $ npm i --save youtube-api
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
 /**
@@ -91,7 +95,7 @@ server.page.add("/oauth2callback", function (lien) {
 });
 ```
 
-## Documentation
+## :memo: Documentation
 
 The [official Youtube documentation](https://developers.google.com/youtube/v3/docs/) is a very useful resource.
 
@@ -135,39 +139,29 @@ Youtube.authenticate({
 });
 ```
 
-## How to contribute
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`anitube`](https://github.com/temperman/animeClowler) by kikura-yuichiro
 
- - [`kyot-sunday-playlists`](https://github.com/apandichi/kyot-sunday-playlists) by Alin Pandichi
+ - [`adasq-services-ytv`](https://github.com/adasq/adasq-services-ytv#readme)—It creates news feed from youtube search result, for specific queries
+ - [`anitube`](https://github.com/temperman/animeClowler) (by kikura-yuichiro)—node module for getting youtube video url of japanese animation OP/ED movie
+ - [`kyot-sunday-playlists`](https://github.com/apandichi/kyot-sunday-playlists) (by Alin Pandichi)—Kyot Sunday Playlists
+ - [`mediacenterjs`](http://www.mediacenterjs.com) (by Jan Smolders)—A NodeJS based mediacenter for your browser
+ - [`mediacenterjs-youtube`](http://www.mediacenterjs.com) (by Jan Smolders)—A Youtube app for mediacenterjs
+ - [`node-red-contrib-youtube`](https://github.com/StefanWerW/node-red-contrib-youtube#readme) (by scaw.dev)—Youtube nodes for node-red
+ - [`node-red-node-youtube`](https://github.com/jlong23/node-red-node-youtube#readme) (by Jay Long)—A Node-RED node to access Youtube Data API.
+ - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) (by Haidy777)—The Youtube-API probably isn't the simplest api in the world. So why isn't there a simplifier? Well, don't worry, now there is one :)
+ - [`pullplaylist`](https://github.com/sameid/pullplaylist) (by Sameid Usmani)—Youtube video downloader in pure javascript.
+ - [`steam-chat-bot`](https://steam-chat-bot.github.io/node-steam-chat-bot) (by See contributors)—Simplified interface for a steam chat bot with lots of built-in functionality
+ - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api)—Test Youtube API NodeJS module
+ - [`youtube-album-uploader`](https://github.com/jpchip/youtube-album-uploader) (by Jared Chapiewsky)—Uploads an mp3 album to Youtube
+ - [`youtube-playlist-info`](https://github.com/benkaiser/youtube-playlist-info) (by Benjamin Kaiser)—Youtube playlist information fetcher.
+ - [`youtube-vanitystats`](https://npmjs.com/package/youtube-vanitystats) (by Sebastian Patten)—A scheduled job that will will query YouTube's API for a given video ID. It will then email you the number of views and amount of revenue you have made since the last time it was run.
 
- - [`mediacenterjs`](http://www.mediacenterjs.com) by Jan Smolders
-
- - [`mediacenterjs-youtube`](http://www.mediacenterjs.com) by Jan Smolders
-
- - [`node-red-node-youtube`](https://github.com/jlong23/node-red-node-youtube#readme) by Jay Long
-
- - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) by Haidy777
-
- - [`pullplaylist`](https://github.com/sameid/pullplaylist) by Sameid Usmani
-
- - [`pully`](https://github.com/JimmyBoh/pully#readme) by Jim Buck
-
- - [`steam-chat-bot`](https://steam-chat-bot.github.io/node-steam-chat-bot) by See contributors
-
- - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api)
-
- - [`youtube-playlist-info`](https://github.com/benkaiser/youtube-playlist-info) by Benjamin Kaiser
-
- - [`youtube-vanitystats`](https://npmjs.com/package/youtube-vanitystats) by Sebastian Patten
- 
- - [`youtube-album-uploader`](https://github.com/jpchip/youtube-album-uploader) by Jared Chapiewsky 
-
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
