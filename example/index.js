@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * This script uploads a video (specifically `video.mp4` from the current
  * directory) to YouTube,
@@ -11,21 +13,20 @@
  * Don't forget to run an `npm i` to install the `youtube-api` dependencies.
  * */
 
-// Dependencies
-var Youtube = require("../lib")
-  , Fs = require("fs")
-  , ReadJson = require("r-json")
-  , Lien = require("lien")
-  , Logger = require("bug-killer")
-  , Opn = require("opn")
-  ;
+const Youtube = require("../lib")
+    , fs = require("fs")
+    , readJson = require("r-json")
+    , Lien = require("lien")
+    , Logger = require("bug-killer")
+    , opn = require("opn")
+    , prettyBytes = require("pretty-bytes")
+    ;
 
-// Constants
 // I downloaded the file from OAuth2 -> Download JSON
-const CREDENTIALS = ReadJson("./credentials.json");
+const CREDENTIALS = readJson(`${__dirname}/credentials.json`);
 
 // Init lien server
-var server = new Lien({
+let server = new Lien({
     host: "localhost"
   , port: 5000
 });
@@ -33,25 +34,35 @@ var server = new Lien({
 // Authenticate
 // You can access the Youtube resources via OAuth2 only.
 // https://developers.google.com/youtube/v3/guides/moving_to_oauth#service_accounts
-var oauth = Youtube.authenticate({
+let oauth = Youtube.authenticate({
     type: "oauth"
   , client_id: CREDENTIALS.web.client_id
   , client_secret: CREDENTIALS.web.client_secret
   , redirect_url: CREDENTIALS.web.redirect_uris[0]
 });
 
-Opn(oauth.generateAuthUrl({
+opn(oauth.generateAuthUrl({
     access_type: "offline"
   , scope: ["https://www.googleapis.com/auth/youtube.upload"]
 }));
 
 // Handle oauth2 callback
-server.page.add("/oauth2callback", function (lien) {
-    Logger.log("Trying to get the token using the following code: " + lien.search.code);
-    oauth.getToken(lien.search.code, function(err, tokens) {
-        if (err) { lien(err, 400); return Logger.log(err); }
+server.addPage("/oauth2callback", lien => {
+    Logger.log("Trying to get the token using the following code: " + lien.query.code);
+    oauth.getToken(lien.query.code, (err, tokens) => {
+
+        if (err) {
+            lien.lien(err, 400);
+            return Logger.log(err);
+        }
+
+        Logger.log("Got the tokens.");
+
         oauth.setCredentials(tokens);
-        Youtube.videos.insert({
+
+        lien.end("The video is being uploaded. Check out the logs in the terminal.");
+
+        var req = Youtube.videos.insert({
             resource: {
                 // Video title and description
                 snippet: {
@@ -68,11 +79,15 @@ server.page.add("/oauth2callback", function (lien) {
 
             // Create the readable stream to upload the video
           , media: {
-                body: Fs.createReadStream("video.mp4")
+                body: fs.createReadStream("index.mpeg")
             }
-        }, function (err, data) {
-            if (err) { return lien.end(err, 400); }
-            lien.end(data);
+        }, (err, data) => {
+            console.log("Done.");
+            process.exit();
         });
+
+        setInterval(function () {
+            Logger.log(`${prettyBytes(req.req.connection._bytesDispatched)} bytes uploaded.`);
+        }, 250);
     });
 });

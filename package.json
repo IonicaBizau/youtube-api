@@ -27,13 +27,19 @@
     "url": "https://github.com/IonicaBizau/youtube-api/issues"
   },
   "dependencies": {
-    "googleapis": "^2.1.3"
+    "googleapis": "^5.2.1"
   },
   "homepage": "https://github.com/IonicaBizau/youtube-api",
   "directories": {
     "example": "example"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bug-killer": "^4.2.2",
+    "lien": "^1.0.1",
+    "opn": "^4.0.1",
+    "pretty-bytes": "^3.0.1",
+    "r-json": "^1.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
