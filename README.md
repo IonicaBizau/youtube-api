@@ -96,7 +96,7 @@ server.addPage("/oauth2callback", lien => {
 
             // Create the readable stream to upload the video
           , media: {
-                body: fs.createReadStream("index.mpeg")
+                body: fs.createReadStream("video.mp4")
             }
         }, (err, data) => {
             console.log("Done.");
