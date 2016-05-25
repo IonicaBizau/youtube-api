@@ -1,6 +1,6 @@
 {
   "name": "youtube-api",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.",
   "main": "lib/index.js",
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
@@ -122,6 +122,7 @@
     "src/",
     "resources/",
     "menu/",
+    "scripts/",
     "cli.js",
     "index.js"
   ]
