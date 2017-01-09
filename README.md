@@ -126,7 +126,8 @@ The [official Youtube documentation](https://developers.google.com/youtube/v3/do
  - [VideoCategories](https://developers.google.com/youtube/v3/docs/videoCategories)
  - [Videos](https://developers.google.com/youtube/v3/docs/videos)
 
-If you have any questions, just [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new).
+If you have any questions, please [ask them on **Stack Overflow**](https://stackoverflow.com/questions/ask) and eventually [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new) and link your question there.
+
 ### Authentication
 
 #### OAuth (Access Token)
