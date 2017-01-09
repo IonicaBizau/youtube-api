@@ -11,7 +11,9 @@
 $ npm i --save youtube-api
 ```
 
+
 ## :clipboard: Example
+
 
 
 ```js
@@ -125,20 +127,16 @@ The [official Youtube documentation](https://developers.google.com/youtube/v3/do
  - [Videos](https://developers.google.com/youtube/v3/docs/videos)
 
 If you have any questions, just [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new).
-
 ### Authentication
 
 #### OAuth (Access Token)
-
 ```js
 Youtube.authenticate({
     type: "oauth"
   , token: "your access token"
 });
 ```
-
 #### OAuth (Refresh Token)
-
 ```js
 Youtube.authenticate({
     type: "oauth"
@@ -148,9 +146,7 @@ Youtube.authenticate({
   , redirect_url: "your refresh url"
 });
 ```
-
 #### Server Key
-
 Only for requests that don't require [user authorization](https://developers.google.com/youtube/v3/guides/authentication) (certain list operations)
 ```js
 Youtube.authenticate({
@@ -160,7 +156,6 @@ Youtube.authenticate({
 ```
 
 ## :yum: How to contribute
-
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 
@@ -174,7 +169,6 @@ to [set up a recurring donation, via Patreon][patreon]. :rocket:
 Thanks! :heart:
 
 ## :dizzy: Where is this library used?
-
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 
@@ -185,12 +179,13 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`mediacenterjs-youtube`](http://www.mediacenterjs.com) (by Jan Smolders)—A Youtube app for mediacenterjs
  - [`node-red-contrib-youtube`](https://github.com/StefanWerW/node-red-contrib-youtube#readme) (by scaw.dev)—Youtube nodes for node-red
  - [`node-red-node-youtube`](https://github.com/jlong23/node-red-node-youtube#readme) (by Jay Long)—A Node-RED node to access Youtube Data API.
- - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) (by Haidy777)—The Youtube-API probably isn't the simplest api in the world.
- So why isn't there a simplifier? Well, don't worry, now there is one :)
+ - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) (by Haidy777)—The Youtube-API probably isn't the simplest api in the world. So why isn't there a simplifier? Well, don't worry, now there is one :)
  - [`pullplaylist`](https://github.com/sameid/pullplaylist) (by Sameid Usmani)—Youtube video downloader in pure javascript.
  - [`steam-chat-bot`](https://steam-chat-bot.github.io/node-steam-chat-bot) (by See contributors)—Simplified interface for a steam chat bot with lots of built-in functionality
  - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api)—Test Youtube API NodeJS module
+ - [`YouSlackBot`](https://npmjs.com/package/YouSlackBot) (by SoNiKBooM)—Insert Youtube videos posted to Slack into a Youtube playlist.
  - [`youtube-album-uploader`](https://github.com/jpchip/youtube-album-uploader) (by Jared Chapiewsky)—Uploads an mp3 album to Youtube
+ - [`youtube-dler`](https://github.com/iguider/youtube-dler#readme) (by Ayoub Ider AGHBAL)—A command line tool to download youtube videos/audio and playlists
  - [`youtube-playlist-info`](https://github.com/benkaiser/youtube-playlist-info) (by Benjamin Kaiser)—Youtube playlist information fetcher.
  - [`youtube-vanitystats`](https://npmjs.com/package/youtube-vanitystats) (by Sebastian Patten)—A scheduled job that will will query YouTube's API for a given video ID. It will then email you the number of views and amount of revenue you have made since the last time it was run.
 
