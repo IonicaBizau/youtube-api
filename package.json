@@ -1,9 +1,9 @@
 {
   "name": "youtube-api",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.",
   "main": "lib/index.js",
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "contributors": [
     "Ionică Bizău <bizauionica@gmail.com>",
     "Adam <aaschodd@asu.edu> (brutalhonesty)",
@@ -120,12 +120,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
