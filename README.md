@@ -1,7 +1,7 @@
 
 # youtube-api
 
- [![Patreon](https://img.shields.io/badge/Support%20me%20on-Patreon-%23e6461a.svg)][patreon] [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Downloads](https://img.shields.io/npm/dt/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+ [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Version](https://img.shields.io/npm/v/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Downloads](https://img.shields.io/npm/dt/youtube-api.svg)](https://www.npmjs.com/package/youtube-api)
 
 > A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
 
@@ -125,7 +125,6 @@ The [official Youtube documentation](https://developers.google.com/youtube/v3/do
  - [Thumbnails](https://developers.google.com/youtube/v3/docs/thumbnails)
  - [VideoCategories](https://developers.google.com/youtube/v3/docs/videoCategories)
  - [Videos](https://developers.google.com/youtube/v3/docs/videos)
-
 If you have any questions, please [ask them on **Stack Overflow**](https://stackoverflow.com/questions/ask) and eventually [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new) and link your question there.
 
 ### Authentication
@@ -160,14 +159,22 @@ Youtube.authenticate({
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 
-## :moneybag: Donations
+## :sparkling_heart: Support my projects
 
-Another way to support the development of my open-source modules is
-to [set up a recurring donation, via Patreon][patreon]. :rocket:
+I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously,
+this takes time. You can integrate and use these projects in your applications *for free*! You can even change the source code and redistribute (even resell it).
 
-[PayPal donations][paypal-donations] are appreciated too! Each dollar helps.
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
+
+ - Starring and sharing the projects you like :rocket:
+ - [![PayPal][badge_paypal]][paypal-donations]—You can make one-time donations via PayPal. I'll probably buy a ~~coffee~~ tea. :tea:
+ - [![Support me on Patreon][badge_patreon]][patreon]—Set up a recurring monthly donation and you will get interesting news about what I'm doing (things that I don't share with everyone).
+ - **Bitcoin**—You can send me bitcoins at this address (or scanning the code below): `1P9BRsmazNQcuyTxEqveUsnf5CERdq35V6`
+
+    ![](https://i.imgur.com/z6OQI95.png)
 
 Thanks! :heart:
+
 
 ## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
@@ -178,12 +185,14 @@ If you are using this library in one of your projects, add it in this list. :spa
  - [`kyot-sunday-playlists`](https://github.com/apandichi/kyot-sunday-playlists) (by Alin Pandichi)—Kyot Sunday Playlists
  - [`mediacenterjs`](http://www.mediacenterjs.com) (by Jan Smolders)—A NodeJS based mediacenter for your browser
  - [`mediacenterjs-youtube`](http://www.mediacenterjs.com) (by Jan Smolders)—A Youtube app for mediacenterjs
+ - [`muzier-cli`](https://github.com/kevin940726/muzier-cli#readme) (by Kai Hao)—The muzier command line interface.
  - [`node-red-contrib-youtube`](https://github.com/StefanWerW/node-red-contrib-youtube#readme) (by scaw.dev)—Youtube nodes for node-red
  - [`node-red-node-youtube`](https://github.com/jlong23/node-red-node-youtube#readme) (by Jay Long)—A Node-RED node to access Youtube Data API.
  - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) (by Haidy777)—The Youtube-API probably isn't the simplest api in the world. So why isn't there a simplifier? Well, don't worry, now there is one :)
  - [`pullplaylist`](https://github.com/sameid/pullplaylist) (by Sameid Usmani)—Youtube video downloader in pure javascript.
  - [`steam-chat-bot`](https://steam-chat-bot.github.io/node-steam-chat-bot) (by See contributors)—Simplified interface for a steam chat bot with lots of built-in functionality
  - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api)—Test Youtube API NodeJS module
+ - [`ydown`](https://npmjs.com/package/ydown)—Downloads Youtube links and playlists (Audio only)
  - [`YouSlackBot`](https://npmjs.com/package/YouSlackBot) (by SoNiKBooM)—Insert Youtube videos posted to Slack into a Youtube playlist.
  - [`youtube-album-uploader`](https://github.com/jpchip/youtube-album-uploader) (by Jared Chapiewsky)—Uploads an mp3 album to Youtube
  - [`youtube-dler`](https://github.com/iguider/youtube-dler#readme) (by Ayoub Ider AGHBAL)—A command line tool to download youtube videos/audio and playlists
@@ -194,11 +203,16 @@ If you are using this library in one of your projects, add it in this list. :spa
 
 [MIT][license] © [Ionică Bizău][website]
 
+[badge_patreon]: http://ionicabizau.github.io/badges/patreon.svg
+[badge_amazon]: http://ionicabizau.github.io/badges/amazon.svg
+[badge_paypal]: http://ionicabizau.github.io/badges/paypal.svg
+[badge_paypal_donate]: http://ionicabizau.github.io/badges/paypal_donate.svg
 [patreon]: https://www.patreon.com/ionicabizau
+[amazon]: http://amzn.eu/hRo9sIZ
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
 [donate-now]: http://i.imgur.com/6cMbHOC.png
 
-[license]: http://showalicense.com/?fullname=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica%40gmail.com%3E%20(http%3A%2F%2Fionicabizau.net)&year=2013#license-mit
-[website]: http://ionicabizau.net
+[license]: http://showalicense.com/?fullname=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica%40gmail.com%3E%20(https%3A%2F%2Fionicabizau.net)&year=2013#license-mit
+[website]: https://ionicabizau.net
 [contributing]: /CONTRIBUTING.md
 [docs]: /DOCUMENTATION.md
