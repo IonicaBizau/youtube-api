@@ -110,6 +110,15 @@ server.addPage("/oauth2callback", lien => {
 });
 ```
 
+## :question: Get Help
+
+There are few ways to get help:
+
+ 1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
+ 2. For bug reports and feature requests, open issues. :bug:
+ 3. For direct and quick help from me, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
+
 ## :memo: Documentation
 
 The [official Youtube documentation](https://developers.google.com/youtube/v3/docs/) is a very useful resource.
@@ -125,6 +134,7 @@ The [official Youtube documentation](https://developers.google.com/youtube/v3/do
  - [Thumbnails](https://developers.google.com/youtube/v3/docs/thumbnails)
  - [VideoCategories](https://developers.google.com/youtube/v3/docs/videoCategories)
  - [Videos](https://developers.google.com/youtube/v3/docs/videos)
+
 If you have any questions, please [ask them on **Stack Overflow**](https://stackoverflow.com/questions/ask) and eventually [open an issue](https://github.com/IonicaBizau/youtube-api/issues/new) and link your question there.
 
 ### Authentication
