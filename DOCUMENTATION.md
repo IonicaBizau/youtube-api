@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Sets an authentication method to have access to protected resources.
 
 #### Params
+
 - **Object** `options`: An object containing the authentication information.
 
 #### Return
