@@ -3,9 +3,7 @@
 
 # youtube-api
 
- [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Downloads](https://img.shields.io/npm/dt/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
-
-<a href="https://www.buymeacoffee.com/H96WwChMy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
+ [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/youtube-api.svg)](https://www.npmjs.com/package/youtube-api) [![Downloads](https://img.shields.io/npm/dt/youtube-api.svg)](https://www.npmjs.com/package/youtube-api)
 
 > A Node.JS module, which provides an object oriented wrapper for the Youtube v3 API.
 
@@ -120,6 +118,8 @@ server.addPage("/oauth2callback", lien => {
 
 
 
+
+
 ## :question: Get Help
 
 There are few ways to get help:
@@ -128,6 +128,7 @@ There are few ways to get help:
  2. For bug reports and feature requests, open issues. :bug:
 
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
 
 
 
@@ -208,36 +209,6 @@ However, if you get some profit from this or just want to encourage me to contin
 Thanks! :heart:
 
 
-## :dizzy: Where is this library used?
-If you are using this library in one of your projects, add it in this list. :sparkles:
-
-
- - [`adasq-services-ytv`](https://github.com/adasq/adasq-services-ytv#readme)—It creates news feed from youtube search result, for specific queries
- - [`anitube`](https://github.com/temperman/animeClowler) (by kikura-yuichiro)—node module for getting youtube video url of japanese animation OP/ED movie
- - [`botyo-command-youtube`](https://github.com/ivkos/botyo-command-youtube#readme) (by Ivaylo Stoyanov)—YouTube command for Botyo
- - [`chewb-youtube-uploader`](https://github.com/samradical/youtube-uploader) (by Sam Elie)—Wrapper tool around a great uploader.
- - [`hpcbot`](https://github.com/hpcbot/hpcbot#readme) (by bdickason)—Twitch Bot for the Harry Potter Clan
- - [`kyot-sunday-playlists`](https://github.com/apandichi/kyot-sunday-playlists) (by Alin Pandichi)—Kyot Sunday Playlists
- - [`mediacenterjs`](http://www.mediacenterjs.com) (by Jan Smolders)—A NodeJS based mediacenter for your browser
- - [`mediacenterjs-youtube`](http://www.mediacenterjs.com) (by Jan Smolders)—A Youtube app for mediacenterjs
- - [`muzier-cli`](https://github.com/kevin940726/muzier-cli#readme) (by Kai Hao)—A command line interface to download mp3 from Youtube.
- - [`node-red-contrib-youtube`](https://github.com/StefanWerW/node-red-contrib-youtube#readme) (by scaw.dev)—Youtube nodes for node-red
- - [`node-red-node-youtube`](https://github.com/jlong23/node-red-node-youtube#readme) (by Jay Long)—A Node-RED node to access Youtube Data API.
- - [`node-youtubeapi-simplifier`](https://github.com/Haidy777/node-youtubeAPI-simplifier) (by Haidy777)—The Youtube-API probably isn't the simplest api in the world. So why isn't there a simplifier? Well, don't worry, now there is one :)
- - [`osjs-youtube-adapter`](https://github.com/SpaceboyRoss01/osjs-youtube-adapter#readme) (by Spaceboy Ross)—The YouTube API wrapped as a VFS adapter in OS.js V3.
- - [`pullplaylist`](https://github.com/sameid/pullplaylist) (by Sameid Usmani)—Youtube video downloader in pure javascript.
- - [`spotivy`](https://github.com/danguilherme/spotivy#readme) (by Guilherme Ventura)—Spotify music videos downloader
- - [`steam-chat-bot`](https://steam-chat-bot.github.io/node-steam-chat-bot) (by See contributors)—Simplified interface for a steam chat bot with lots of built-in functionality
- - [`test-youtube-api`](https://github.com/IonicaBizau/test-youtube-api)—Test Youtube API NodeJS module
- - [`ydown`](https://npmjs.com/package/ydown)—Downloads Youtube links and playlists (Audio only)
- - [`YouSlackBot`](https://npmjs.com/package/YouSlackBot) (by SoNiKBooM)—Insert Youtube videos posted to Slack into a Youtube playlist.
- - [`youtube-album-uploader`](https://github.com/jpchip/youtube-album-uploader) (by Jared Chapiewsky)—Uploads an mp3 album to Youtube
- - [`youtube-album-uploader-multiple`](https://github.com/Chnapy/youtube-album-uploader-multiple) (by Richard Haddad)—Uploads multiple mp3 files to youtube
- - [`youtube-channel-videos`](https://github.com/almoore/youtube-channel-videos#readme) (by Alex Moore)—Youtube channel videos fetcher.
- - [`youtube-comment-sampler`](https://npmjs.com/package/youtube-comment-sampler) (by krazyjakee@gmail.com)—Download 1000 relevant youtube comments for a youtube video to CSV
- - [`youtube-dler`](https://github.com/iguider/youtube-dler#readme) (by Ayoub Ider AGHBAL)—A command line tool to download youtube videos/audio and playlists
- - [`youtube-playlist-info`](https://github.com/benkaiser/youtube-playlist-info#readme) (by Benjamin Kaiser)—Youtube playlist information fetcher.
- - [`youtube-vanitystats`](https://npmjs.com/package/youtube-vanitystats) (by Sebastian Patten)—A scheduled job that will will query YouTube's API for a given video ID. It will then email you the number of views and amount of revenue you have made since the last time it was run.
 
 ## :scroll: License
 
